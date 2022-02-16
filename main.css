@@ -1,33 +1,236 @@
-img{
-    max-width:100%;
-    max-height:100%;
-    }
-    header{
-        text-align: center;
-    }
-    .main-section{
-        text-align: center;
-        margin: auto;
-      width: 80%;
-    }
-    
-    table tr td{
-        text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav a{
+    color: #fff;;
+}
+
+nav a:hover{
+    color: lightgray;
+}
+
+nav{
+    position: absolute;
+    right: 50px;
+    top: 20px;
+}
+
+nav ul{
+display: flex;
+}
+
+nav ul li{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+body{
+    background: #eee;
+}
+
+.banner-area{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.banner_index{
+    background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/hero-image.jpg);
+    background-size: cover;
+}
+
+.banner_rom{
+    background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/Romania2.jpg);
+    background-size: cover;
+}
+
+.banner_afr{
+    background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/africa2.jpg);
+    background-size: cover;
+}
+
+.banner_chi{
+    background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/china2.jpg);
+    background-size: cover;
+}
+
+.banner_ung{
+    background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/ungaria2.jpg);
+    background-size: cover;
+}
+
+.content-area{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    text-align: center;
+}
+
+.content h1{
+    font-size: 40px;
+    color:#fff;
+}
+
+.content .btn{
+    border: none;
+    outline: none;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: #eee;
+    font-size: 15px;
+    cursor:pointer;
+    background: #222;
+    transition: all 0.2s ease-in-out;
+}
+
+.content .btn:hover, .main-section button:hover{
+transform: scale(1.1);
+}
+
+.main-section button{
+    border: none;
+    outline: none;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: #eee;
+    font-size: 15px;
+    cursor:pointer;
+    background: #222;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+header{
+    text-align: center;
+}
+
+.main-section{
+    background-color: #fff;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.main-table, .main-table2{
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+.main-table tr td, .main-table2 tr td {
+    border-collapse: collapse;
+    padding: 40px;
+    text-align: center;
+  }
+
+.main-table img{
+    display: block;
+    width: 450px;
+    height: 300px;
+}
+
+.image{
+    position: relative;
+    transition: 0.3s;
+}
+
+.image_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+
+.image_overlay--blur{
+    backdrop-filter: blur(2px);
+}
+
+.image_overlay:hover{
+    opacity: 1;
+}
+
+.image_title{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.image_description{
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
+
+.main-table .image:hover{
+    transition: 0.3s;
     }
 
-    .main-table2 tr td p{
-        text-align: justify;
-    }
+.main-table .image:hover{
+transform: scale(1.1);
+}
 
-    .main-table2 tr td{
-        padding: 20px;
-    }
+.main-table2 img{
+    width: 500px;
+    height: 300px;
+}
 
-    .bottom-links p{
-        display: inline;
-    }
+table tr td{
+    text-align: center;
+}
 
-    .bottom-links a{
-        padding-left: 10px;
-        padding-right: 10px;
-    }
+.main-table2 tr td p{
+    text-align: justify;
+}
+
+.main-table2 tr td{
+    padding: 20px;
+}
+
+.bottom-links p{
+    display: inline;
+}
+
+
+.bottom-links a{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+}
+
+a{
+     text-decoration: none;
+}
+
+.main-section h3{
+    font-size: 30px;
+}
+
+.main-section h2{
+    font-size: 30px;
+}
+
+.main-section p{
+    font-size: 18px;
+}
+
