@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-nav ul li{
-    list-style: none;
-}
-
 nav a{
     color: #fff;;
 }
@@ -20,6 +16,9 @@ nav{
     position: absolute;
     right: 50px;
     top: 20px;
+}
+nav ul li{
+    list-style: none;
 }
 
 nav ul{
