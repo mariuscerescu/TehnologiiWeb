@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Romania</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="script.js" async></script>
 </head>
 <body>
     <header>
@@ -20,7 +23,7 @@
             <div class="content-area">
                 <div class="content">
                     <h1 class="title"> Afla despre cele mai frumoase locuri din Romania! </h1> 
-                   <a href="#main-section"> <button class="btn"> Afla acum! </button> </a>
+                   <button class="btn"> Afla acum! </button>
                </div>
             </div>
         </div>
@@ -108,15 +111,41 @@
         </tr>
         
         </table>
-
-<div class="bottom-links">
-    <p> Poate te intereseaza:</p>
-    <a href="ungaria.html">Ungaria</a>
-    <a href="africadesud.html">Africa de Sud</a>
-    <a href="china.html">China</a>
-</div>
     
     </section>
-    
+
+    <button id="btnScrollToTop"> 
+        <i class="material-icons">arrow_upward</i>
+    </button>
+
+    <div class="slider-container">
+        <h4>Poate te intereseaza urmatoarele țări:</h4>
+<div class="slider">
+    <div class="slides">
+
+    <input type="radio" name="radio-btn" id="radio1">
+    <input type="radio" name="radio-btn" id="radio2">
+    <input type="radio" name="radio-btn" id="radio3">
+
+<div class="slide first">
+   <a href="china.html"><img src="images/China.jpg" alt="China"></a>
+</div>
+<div class="slide">
+    <a href="africadesud.html"><img src="images/Africa.jpg" alt="Africa"></a>
+</div>
+<div class="slide">
+    <a href="ungaria.html"><img src="images/Ungaria.jpg" alt="Ungaria"></a>
+</div>
+
+</div>
+
+<div class="navigation-manual">
+<label for="radio1" class="manual-btn"></label>
+<label for="radio2" class="manual-btn"></label>
+<label for="radio3" class="manual-btn"></label>
+
+</div>
+</div>
+</div>
 </body>
 </html>
