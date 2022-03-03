@@ -41,27 +41,27 @@ body{
 }
 
 .banner_index{
-    background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/hero-image.jpg);
+    background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/hero-image.jpg);
     background-size: cover;
 }
 
 .banner_rom{
-    background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/Romania2.jpg);
+    background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/Romania2.jpg);
     background-size: cover;
 }
 
 .banner_afr{
-    background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/africa2.jpg);
+    background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/africa2.jpg);
     background-size: cover;
 }
 
 .banner_chi{
-    background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/china2.jpg);
+    background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/china2.jpg);
     background-size: cover;
 }
 
 .banner_ung{
-    background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/ungaria2.jpg);
+    background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/ungaria2.jpg);
     background-size: cover;
 }
 
