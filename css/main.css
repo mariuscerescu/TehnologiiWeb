@@ -65,6 +65,11 @@ body{
     background-size: cover;
 }
 
+.banner_booking{
+    background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/booking.jpg);
+    background-size: cover;
+}
+
 .content-area{
     height: 100%;
     display: flex;
@@ -336,3 +341,52 @@ margin-left: 0;
     top: 20px;
     font-size: 20px;
 }
+
+.input{
+position: fixed;
+top: 100px;
+}
+
+.input input{
+    padding: 10px;
+    margin: 5px;
+}
+
+.input button{
+    padding: 10px;
+    margin: 5px;
+    width: 100px;
+}
+
+.flights{
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+}
+
+#flight1,#flight2,#flight3,#flight4,#flight5{
+    display: none;
+} 
+
+.content-area-flights {
+    flex-direction: column;
+}
+
+.flights table {
+    border-collapse: separate;
+    border-spacing:0 10px;
+}
+
+.flights table td{
+    width:150px;
+    text-align:center;
+    border:1px solid black;
+    padding:5px
+}
+
+.content-area-flights h1{
+margin-bottom: 20px;
+position: fixed;
+top: 40px;
+}
+

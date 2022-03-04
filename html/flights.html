@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zboruri</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../javascript/script.js" async></script>
+</head>
+<body>
+    
+    <header>
+        <div class="banner-area banner_booking">
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+    </nav>
+
+<div class="content-area content-area-flights">
+
+<h1> Caută zborul care te interesează. </h1>
+
+<div class="input">
+<input type="text" class="txtbox" id="origin" placeholder="Țara de plecare">
+<input type="text" class="txtbox" id="destination" placeholder="Destinația">
+<input type="text" class="txtbox" id="date" placeholder="Data">
+<button onclick="find_flight()">Caută</button>
+<button onclick="find_all()">Arată totul</button>
+</div>
+
+<div class="flights" id="flights">
+<div id="flight1">
+
+    <table>
+        <tr>
+            <th> Orașul de plecare </th> <th> Destinația </th> <th> Data </th>
+        </tr>
+        <tr>
+              <td> Chișinău </td>  <td> Roma </td> <td> 15/03/2022 </td>
+        </tr>
+    </table>
+
+</div>
+<div id="flight2">
+
+    <table>
+        <tr>
+            <th> Orașul de plecare </th> <th> Destinația </th> <th> Data </th>
+        </tr>
+        <tr>
+              <td> Roma </td>  <td> Chișinău </td> <td> 27/06/2022 </td>
+        </tr>
+    </table>
+
+</div>
+<div id="flight3">
+
+    <table>
+        <tr>
+            <th> Orașul de plecare </th> <th> Destinația </th> <th> Data </th>
+        </tr>
+        <tr>
+              <td> Chișinău </td>  <td> Paris </td> <td> 18/09/2022 </td>
+        </tr>
+    </table>
+
+</div>
+<div id="flight4">
+
+    <table>
+        <tr>
+            <th> Orașul de plecare </th> <th> Destinația </th> <th> Data </th>
+        </tr>
+        <tr>
+              <td> Londra </td>  <td> Chișinău </td> <td> 04/08/2022 </td>
+        </tr>
+    </table>
+
+</div>
+<div id="flight5">
+
+    <table>
+        <tr>
+            <th> Orașul de plecare </th> <th> Destinația </th> <th> Data </th>
+        </tr>
+        <tr>
+              <td> Chișinău </td>  <td> Berlin </td> <td> 22/05/2022 </td>
+        </tr>
+    </table>
+</div>
+</div>
+</div>
+</div>
+</header>
+</body>
+</html>
