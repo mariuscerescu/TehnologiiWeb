@@ -73,3 +73,18 @@ function find_all(){
     flight5.style.display = "block";
 }
 
+function more_info1(){
+    document.querySelector("#more_info1").style.display = "table-cell";
+}
+function more_info2(){
+    document.querySelector("#more_info2").style.display = "table-cell";
+}
+function more_info3(){
+    document.querySelector("#more_info3").style.display = "table-cell";
+}
+function more_info4(){
+    document.querySelector("#more_info4").style.display = "table-cell";
+}
+function more_info5(){
+    document.querySelector("#more_info5").style.display = "table-cell";
+}
