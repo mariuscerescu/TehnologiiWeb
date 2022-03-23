@@ -364,9 +364,6 @@ top: 100px;
     margin-top: 150px;
 }
 
-#flight1,#flight2,#flight3,#flight4,#flight5{
-    display: none;
-} 
 
 .content-area-flights {
     flex-direction: column;
@@ -378,11 +375,12 @@ top: 100px;
 }
 
 .flights table td{
-    width:150px;
+    width:200px;
     text-align:center;
     border:1px solid black;
     padding:5px;
     background-color: white;
+    font-size: 16px;
     
 }
 
@@ -399,11 +397,11 @@ top: 40px;
     width: 80px;
 }
 
-#more_info1, #more_info2, #more_info3, #more_info4, #more_info5{
-   display: none;
-}
-
 #flights{
     position: absolute;
     top: 10px;
+}
+
+#nuexista{
+    font-size: 25px;
 }
