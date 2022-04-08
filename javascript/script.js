@@ -75,7 +75,6 @@ var flights = [
     }
     ]
 let flag = 0;
-let mode = 0;
 function find_flight(){
 var origin = document.getElementById("origin").value;
 var destination = document.getElementById("destination").value;
@@ -172,3 +171,6 @@ function show_flight2(i, table){
     cell1row2.colSpan = "3";
     flag = 1;
 }
+
+
+

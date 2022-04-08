@@ -70,6 +70,21 @@ body{
     background-size: cover;
 }
 
+.banner_contacts{
+    background: url(../images/gradient.jpg);
+    background-size: cover;
+}
+
+.banner_signup{
+    background: url(../images/sign_up_grad.jpg);
+    background-size: cover;
+}
+
+.banner_donations{
+    background: url(../images/donations.jpg);
+    background-size: cover;
+}
+
 .content-area{
     height: 100%;
     display: flex;
@@ -404,4 +419,103 @@ top: 40px;
 
 #nuexista{
     font-size: 25px;
+}
+
+.content-area-contacts .contact_us{
+background-color: #fff;
+padding: 30px;
+}
+
+.content-area-contacts h1{
+font-family: calibri;
+font-size: 24px;
+margin-bottom: 20px;
+}
+
+.content-area-contacts #submit{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+    width: 80px;
+    background-color: #007FFF;
+    color: #fff;
+    font-family: calibri;
+}
+
+.content-area-contacts #name, #email, #password, #fname, #sname, #password2, #phone, #address, #donation_sum{
+    width: 250px;
+    margin-bottom: 8px;
+    height: 30px;
+}
+
+.content-area-contacts #message{
+    width: 250px;
+    height: 80px;
+}
+
+.form_container{
+    position: relative;
+}
+
+.content-area-contacts #name_error_message, #email_error_message, #fname_error_message, #sname_error_message, #password_error_message, #password_error_message2, #email_error_message2, #phone_error_message, #address_error_message, #donation_sum_error_message{
+font-family: calibri;
+font-size: 15px;
+margin-bottom: 5px;
+}
+
+.content-area-contacts #name_error_message{
+    position: absolute;
+    top: 33px;
+}
+
+.content-area-contacts #email_error_message{
+    position: absolute;
+    top: 90px;
+}
+
+#fname_error_message{
+    position: absolute;
+    top: 33px;
+}
+
+#sname_error_message{
+    position: absolute;
+    top: 90px;
+}
+
+#email_error_message2{
+    position: absolute;
+    top: 146px;
+}
+
+#password_error_message{
+    position: absolute;
+    top: 202px;
+}
+
+
+#password_error_message2{
+    position: absolute;
+    top: 258px;
+}
+
+#phone_error_message{
+    position: absolute;
+    top: 202px;
+}
+
+#address_error_message{
+    position: absolute;
+    top: 258px;
+}
+
+#donation_sum_error_message{
+    position: absolute;
+    top: 312px;
+}
+
+.php_error{
+    font-family: calibri;
+    margin: 10px;
+    font-size: 15px;
 }
