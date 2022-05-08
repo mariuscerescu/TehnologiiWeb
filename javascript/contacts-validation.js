@@ -1,5 +1,4 @@
 $(function(){
-
     $("#name_error_message").hide();
     $("#email_error_message").hide();
     
@@ -10,25 +9,24 @@ $(function(){
         checkname();
     });
     $("#email").focusout(function(){
-        checkemail();
+        check_email();
     });
-    
+       
     function checkname(){
-    
-    var pattern = /^[a-zA-Z-' ]*$/;
-    var name = $("#name").val();
-    if(pattern.test(name) && name !== ''){
-        $("#name_error_message").hide();
-        $("#name").css("border-bottom", "2px solid #34F458");
-    }else{
-        $("#name_error_message").html("Should contain only Characters");
-        $("#name_error_message").show();
-        $("#name").css("border-bottom", "2px solid #F90A0A");
-        error_name = true;
-    }
-    }
-    
-    function checkemail(){
+      var pattern = /^[a-zA-Z-' ]*$/;
+      var name = $("#name").val();
+      if(pattern.test(name) && name !== ''){
+          $("#name_error_message").hide();
+          $("#name").css("border-bottom", "2px solid #34F458");
+      }else{
+          $("#name_error_message").html("Should contain only Characters");
+          $("#name_error_message").show();
+          $("#name").css("border-bottom", "2px solid #F90A0A");
+          error_name = true;
+      }
+      }
+
+      function check_email(){
     
         var pattern = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
         var email = $("#email").val();
@@ -42,15 +40,14 @@ $(function(){
             error_email = true;
         }
     }
-    
-    
+
     $("#form").submit(function(){
     
         error_name = false;
         error_email = false;
     
       checkname();
-      checkemail();
+      check_email();
     
       if(error_name === false && error_email === false){
        alert("Registration Successfull");
@@ -61,4 +58,4 @@ $(function(){
       }
     
     });
-    });
+  });
