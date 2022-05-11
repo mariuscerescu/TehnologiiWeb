@@ -53,7 +53,7 @@ $(function(){
        alert("Registration Successfull");
           return true;
       }else{
-        alert("Pliss Fill the form Correctly");
+        alert("Please Fill the form Correctly");
           return false;
       }
     

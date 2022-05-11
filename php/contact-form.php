@@ -1,9 +1,14 @@
 <?php
+    $name = $_POST['name'];
+    $email = $_POST['email'];
 
-$name = $_POST['name'];
-$email = $_POST['email'];
-$success = "Success!";
+include "validation-functions.php";
 
-include('validation-functions.php');
-include('contacts.php');
+$result = $name_error . " <br> " . $email_error;
+
+if($name_error == NULL && $email_error == NULL){
+    echo "Succes!";
+}else{
+    echo $result;
+}
 ?>

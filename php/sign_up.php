@@ -1,9 +1,3 @@
-<?php 
-if(!isset($success)){
-    $success = '';
-}
-?>
-
 <!DOCTYPE html>
 <html lang="ro">
 <head>
@@ -14,6 +8,7 @@ if(!isset($success)){
     <link rel="stylesheet" href="../css/main.css"> 
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -46,31 +41,32 @@ if(!isset($success)){
 <input type="password" id="password2" name="password2" placeholder="Re-Enter Password"><br><br>
 <p class="error_form" id="password_error_message2"></p>
 <input type="submit" id="submit" value="Send" name="submit">
-<?php if(isset($fname_error)){ ?>
-    <p class="php_error"> <?php echo $fname_error ?> </p>
-<?php } ?>
-<?php if(isset($sname_error)){ ?>
-    <p class="php_error"> <?php echo $sname_error ?> </p>
-<?php } ?>
-<?php if(isset($email_error)){ ?>
-    <p class="php_error"> <?php echo $email_error ?> </p>
-<?php } ?>
-<?php if(isset($password_error)){ ?>
-    <p class="php_error"> <?php echo $password_error ?> </p>
-<?php } ?>
-<?php if(isset($password_error2)){ ?>
-    <p class="php_error"> <?php echo $password_error2 ?> </p>
-<?php } ?>
-<?php if(!isset($fname_error) && !isset($semail_error) && !isset($email_error) && !isset($password_error) && !isset($password_error2)){ ?>
-    <p class="php_error"> <?php echo $success ?> </p>
-<?php } ?>
+<p id="validationText"></p>
 </form>
 </div>
 </div>
 </div>
 </div>
 </header>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("form").submit(function(event){
+event.preventDefault();
+var fname = $("#fname").val();
+var sname = $("#sname").val();
+var email = $("#email").val();
+var password = $("#password").val();
+var password2 = $("#password2").val();
+$("#validationText").load("sign-up-validation.php", {
+    fname: fname,
+    sname: sname,
+    email: email,
+    password: password,
+    password2: password2,
+});
+});
+});
+</script>
 <script src="../javascript/sign-up-validation.js"></script>
 </body>
 </html>
