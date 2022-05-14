@@ -4,11 +4,11 @@
 
 include "validation-functions.php";
 
-$result = $name_error . " <br> " . $email_error;
-
 if($name_error == NULL && $email_error == NULL){
-    echo "Succes!";
+    $result = "Succes!";
+    echo json_encode($result);
 }else{
-    echo $result;
+    $result = "Fill all the fields correctly!!";
+    echo json_encode($result);
 }
 ?>

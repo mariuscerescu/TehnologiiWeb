@@ -10,9 +10,10 @@ include('validation-functions.php');
 
 if($fname_error == NULL && $sname_error == NULL && $email_error == NULL && $password_error == NULL
  && $password_error2 == NULL){
-    echo "Succes!";
+    $result = "Succes!";
+    echo json_encode($result);
 }else{
-    echo $fname_error . " <br> " . $sname_error . " <br> " . $email_error . " <br> " . $password_error
-     . " <br> " . $password_error2;
+    $result = "Fill all the fields correctly!";
+    echo json_encode($result);
 }
 ?>

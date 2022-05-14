@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donations</title>
     <link rel="stylesheet" href="../css/main.css"> 
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
@@ -43,6 +43,7 @@
 <input type="number" id="donation_sum" name="donation_sum" placeholder="Donation Sum"><br><br>
 <p class="error_form" id="donation_sum_error_message"></p>
 <input type="submit" id="submit" value="Send" name="submit">
+<br>
 <p id="validationText"></p>
 </form>
 </div>
@@ -50,27 +51,7 @@
 </div>
 </div>
 </header>
-<script>
-$(document).ready(function(){
-$("form").submit(function(event){
-event.preventDefault();
-var fname = $("#fname").val();
-var sname = $("#sname").val();
-var email = $("#email").val();
-var phone = $("#phone").val();
-var address = $("#address").val();
-var donation_sum = $("#donation_sum").val();
-$("#validationText").load("donations-validation.php", {
-    fname: fname,
-    sname: sname,
-    email: email,
-    phone: phone,
-    address: address,
-    donation_sum: donation_sum
-});
-});
-});
-</script>
 <script src="../javascript/donations-validation.js"></script>
+<script src="../javascript/validation-functions.js"></script>
 </body>
 </html>

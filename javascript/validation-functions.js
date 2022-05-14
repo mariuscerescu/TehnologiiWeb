@@ -47,10 +47,13 @@ function checkname(){
         var email = $("#email").val();
         if(pattern.test(email) && email !== ''){
             $("#email_error_message").hide();
+            $("#email_error_message2").hide();
             $("#email").css("border-bottom", "2px solid #34F458");
         }else{
             $("#email_error_message").html("Invalid Email");
+            $("#email_error_message2").html("Invalid Email");
             $("#email_error_message").show();
+            $("#email_error_message2").show();
             $("#email").css("border-bottom", "2px solid #F90A0A");
             error_email = true;
         }
@@ -123,3 +126,4 @@ function checkname(){
            $("#password2").css("border-bottom","2px solid #34F458");
         }
      }
+

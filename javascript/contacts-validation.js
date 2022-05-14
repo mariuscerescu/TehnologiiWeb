@@ -11,38 +11,8 @@ $(function(){
     $("#email").focusout(function(){
         check_email();
     });
-       
-    function checkname(){
-      var pattern = /^[a-zA-Z-' ]*$/;
-      var name = $("#name").val();
-      if(pattern.test(name) && name !== ''){
-          $("#name_error_message").hide();
-          $("#name").css("border-bottom", "2px solid #34F458");
-      }else{
-          $("#name_error_message").html("Should contain only Characters");
-          $("#name_error_message").show();
-          $("#name").css("border-bottom", "2px solid #F90A0A");
-          error_name = true;
-      }
-      }
-
-      function check_email(){
     
-        var pattern = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-        var email = $("#email").val();
-        if(pattern.test(email) && email !== ''){
-            $("#email_error_message").hide();
-            $("#email").css("border-bottom", "2px solid #34F458");
-        }else{
-            $("#email_error_message").html("Invalid Email");
-            $("#email_error_message").show();
-            $("#email").css("border-bottom", "2px solid #F90A0A");
-            error_email = true;
-        }
-    }
-
-    $("#form").submit(function(){
-    
+function check_validation(){
         error_name = false;
         error_email = false;
     
@@ -50,12 +20,27 @@ $(function(){
       check_email();
     
       if(error_name === false && error_email === false){
-       alert("Registration Successfull");
           return true;
       }else{
-        alert("Please Fill the form Correctly");
           return false;
       }
-    
+}
+
+$("form").submit(function(event){
+    event.preventDefault();
+    var name = $("#name").val();
+    var email = $("#email").val();
+    if(check_validation() === true){
+
+$.ajax({
+    url: "contact-form.php",
+    method: "POST",
+    data: {name:name, email:email},
+    dataType: "JSON",
+    success:function(result){
+        $("#validationText").text(result);
+    }
+});
+}
     });
   });

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact us</title>
     <link rel="stylesheet" href="../css/main.css"> 
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
@@ -35,6 +35,7 @@
 <p class="error_form" id="email_error_message"></p>
 <input type="text" id="message" name="message" placeholder="Message"><br><br>
 <input type="submit" id="submit" value="Send" name="submit">
+<br>
 <p id="validationText"></p>
 </form>
 </div>
@@ -42,19 +43,7 @@
 </div>
 </div>
 </header>
-<script>
-$(document).ready(function(){
-$("form").submit(function(event){
-event.preventDefault();
-var name = $("#name").val();
-var email = $("#email").val();
-$("#validationText").load("contact-form.php", {
-    name: name,
-    email: email
-});
-});
-});
-</script>
 <script src="../javascript/contacts-validation.js"></script>
+<script src="../javascript/validation-functions.js"></script>
 </body>
 </html>
