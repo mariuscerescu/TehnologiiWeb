@@ -1,4 +1,4 @@
-$(function(){
+
     $("#fname_error_message").hide();
     $("#sname_error_message").hide();
     $("#email_error_message2").hide();
@@ -43,6 +43,7 @@ function check_validation(){
         if (error_fname === false && error_sname === false && error_email === false && error_password === false && error_retype_password === false) {
            return true;
         } else {
+         $("#validationText").text("Please fill the form correctly!");
            return false;
         }
       }
@@ -74,4 +75,4 @@ function check_validation(){
             }
          });
          });
-    });
+  

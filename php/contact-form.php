@@ -8,7 +8,7 @@ if($name_error == NULL && $email_error == NULL){
     $result = "Succes!";
     echo json_encode($result);
 }else{
-    $result = "Fill all the fields correctly!!";
+    $result = "Error";
     echo json_encode($result);
 }
 ?>

@@ -1,4 +1,4 @@
-$(function(){
+
     $("#name_error_message").hide();
     $("#email_error_message").hide();
     
@@ -22,6 +22,7 @@ function check_validation(){
       if(error_name === false && error_email === false){
           return true;
       }else{
+        $("#validationText").text("Please fill the fields correctly!");
           return false;
       }
 }
@@ -43,4 +44,3 @@ $.ajax({
 });
 }
     });
-  });

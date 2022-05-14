@@ -1,4 +1,4 @@
-$(function(){
+
     $("#fname_error_message").hide();
     $("#sname_error_message").hide();
     $("#email_error_message2").hide();
@@ -50,6 +50,7 @@ $(function(){
         if (error_fname === false && error_sname === false && error_email === false && error_phone === false && error_address === false && error_donation_sum === false) {
            return true;
         } else {
+         $("#validationText").text("Please fill the form correctly!");
            return false;
         }
       }
@@ -83,4 +84,4 @@ $(function(){
             }
          });
          });
-    });
+  

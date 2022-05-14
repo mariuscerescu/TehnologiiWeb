@@ -13,7 +13,7 @@ if($fname_error == NULL && $sname_error == NULL && $email_error == NULL && $pass
     $result = "Succes!";
     echo json_encode($result);
 }else{
-    $result = "Fill all the fields correctly!";
+    $result = "Error";
     echo json_encode($result);
 }
 ?>
